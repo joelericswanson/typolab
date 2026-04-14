@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Vector Sculptures — TYPOLAB</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="site-title"><a href="../index.html">TYPO Lab</a></div>
+        <nav>
+          <a href="../about.html">About</a>
+          <a href="../projects.html" class="active">Projects</a>
+          <a href="../courses.html">Courses</a>
+          <a href="../equipment.html">Equipment</a>
+          <a href="../contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        <a href="../projects.html" class="back-link">&larr; All Projects</a>
+
+        <div class="project-header">
+          <h1>Word Vector Sculptures</h1>
+          <p class="project-meta">Brad Gallagher and the Students of Computational Writing, Spring 2021</p>
+        </div>
+
+        <div class="project-body">
+          <p>"You shall know a word by the company it keeps." &mdash;John R. Firth (1957)</p>
+
+          <p>Words are deeply nuanced, their meanings shaped by both formal definitions and the diverse contexts in which they appear. These meanings can be represented as vectors in a high-dimensional space, highlighting relationships between words within a body of text. By projecting these vectors into a three-dimensional space, we can visualize these relationships as measurable distances and axes. Some of these relationships are even observable in closed-body 3D prints.</p>
+
+          <p>To achieve this, we used t-distributed stochastic neighbor embedding (t-SNE) to reduce 300-dimensional word vectors to three dimensions. The word vectors were derived from the fastText wiki-subwords-300 model, trained on 1 million unique words sourced from the Wikipedia 2017 dataset, the UMBC web-based corpus, and the statmt.org news dataset (a total of 16 billion tokens).</p>
+
+          <p>Finally, we utilized MeshLab to generate closed surfaces from the 3D points, creating tangible representations of these linguistic structures.</p>
+        </div>
+
+        <div class="project-images">
+          <img src="../images/wordvectors-01.jpg" alt="Word Vector Sculpture 1">
+          <img src="../images/wordvectors-02.jpg" alt="Word Vector Sculpture 2">
+          <img src="../images/wordvectors-03.jpg" alt="Word Vector Sculpture 3">
+          <img src="../images/wordvectors-04.jpg" alt="Word Vector Sculpture 4">
+          <img src="../images/wordvectors-05.jpg" alt="Word Vector Sculpture 5">
+          <img src="../images/wordvectors-06.jpg" alt="Word Vector Sculpture 6">
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-address">
+          <a href="https://atlas.colorado.edu">ATLAS Institute</a><br>
+          <a href="https://www.colorado.edu/">University of Colorado Boulder</a><br>
+          Roser ATLAS Center<br>
+          1125 18th St. 320 UCB<br>
+          Boulder, CO 80309-0320
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
